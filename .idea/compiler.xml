@@ -3,8 +3,34 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.2/524e0a697e9d62950b2f763d88d35cd8dc82a9a1/lombok-1.18.2.jar" />
+        </processorPath>
+        <module name="epam-dsc-2019.cloud-eureka.eureka-zuul.main" />
+        <module name="epam-dsc-2019.cloud-security.security-resource-server.main" />
+        <module name="epam-dsc-2019.cloud-config.main" />
+        <module name="epam-dsc-2019.cloud-eureka.eureka-client-declarative.hystrix-client.main" />
+        <module name="epam-dsc-2019.cloud-eureka.main" />
+        <module name="epam-dsc-2019.cloud-eureka.cloud-config-server.main" />
+        <module name="epam-dsc-2019.cloud-security.main" />
+        <module name="epam-dsc-2019.cloud-eureka.eureka-feign-client.hystrix-client.main" />
+        <module name="epam-dsc-2019.basic-microservice.main" />
+        <module name="epam-dsc-2019.cloud-eureka.eureka-client-declarative.main" />
+        <module name="epam-dsc-2019.cloud-eureka.eureka-server.main" />
+        <module name="epam-dsc-2019.cloud-eureka.eureka-client-declarative.discovery-client.main" />
+        <module name="epam-dsc-2019.cloud-eureka.eureka-client.main" />
+        <module name="epam-dsc-2019.cloud-config.cloud-config-server.main" />
+        <module name="epam-dsc-2019.cloud-security.security-client-application.main" />
+        <module name="epam-dsc-2019.cloud-eureka.eureka-feign-client.discovery-client.main" />
+        <module name="epam-dsc-2019.cloud-eureka.eureka-feign-client.main" />
+        <module name="epam-dsc-2019.cloud-eureka.eureka-client-declarative.ribbon-client.main" />
+        <module name="epam-dsc-2019.main" />
+        <module name="epam-dsc-2019.cloud-config.cloud-config-client.main" />
+      </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="demo.main" target="1.8" />
       <module name="demo.test" target="1.8" />
       <module name="epam-dsc-2019.cloud-eureka.eureka-feign-client.declarative-client.main" target="1.8" />

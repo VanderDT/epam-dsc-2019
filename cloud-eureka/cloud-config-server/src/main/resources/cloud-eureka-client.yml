@@ -7,3 +7,15 @@ app:
   service:
     name: Eureka Client Example (Default profile)
     icon: 128049
+
+spring:
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      group-id: app.1
+    bootstrap-servers: 5.141.84.146:9092
+    client-id: client1
+    template:
+      default-topic: jmtopic2
+    producer:
+      bootstrap-servers: 5.141.84.146:9092

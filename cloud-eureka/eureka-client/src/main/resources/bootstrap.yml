@@ -8,6 +8,18 @@ spring:
   application:
     name: cloud-eureka-client
 
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      group-id: app.1
+    bootstrap-servers: 5.141.84.146:9092
+    client-id: client1
+    template:
+      default-topic: jmtopic2
+    producer:
+      bootstrap-servers: 5.141.84.146:9092
+
+
   # Try to get reference to Config Server using service discovery.
   # To make it works, it's necessary to enable it first, and next
   # it's necessary to set the name of config server.
@@ -24,3 +36,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8000/eureka/
+logging:
+  file: D:/ELK/CloudEurekaClientApplication.log

@@ -6,6 +6,10 @@ spring:
   application:
     name: Eureka Server
 eureka:
+  server:
+    # Скрываем сообщение об ошибке в WEB морде Эврики
+    #enable-self-preservation: false
+    renewal-percent-threshold: 0.85
   client:
     # Don't register Eureka server in itself
     # It allows to start without exceptions
@@ -15,3 +19,4 @@ eureka:
     # Name of current host, in this particular case it's better
     # to set it manually
     hostname: localhost
+
